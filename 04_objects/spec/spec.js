@@ -8,8 +8,8 @@ describe('person', function() {
   });
 });
 
-describe('sweetnesssProperty', function() {
-  xit('returns the value of the `sweetness` key', function() {
+describe('sweetnessProperty', function() {
+  it('returns the value of the `sweetness` key', function() {
     var obj = {
       lastName: 'cool',
       sweetness: 'super',
@@ -18,13 +18,13 @@ describe('sweetnesssProperty', function() {
     expect(yourCode.sweetnessProperty(obj)).toEqual('super');
   });
 
-  xit('returns undefined when there is no `sweetness` key', function() {
+  it('returns undefined when there is no `sweetness` key', function() {
     expect(yourCode.sweetnessProperty({})).toEqual(undefined);
   });
 });
 
 describe('savorynessProperty', function() {
-  xit('returns the value of the `savory-ness` key', function() {
+  it('returns the value of the `savory-ness` key', function() {
     var obj = {
       lastName: 'cool',
       "savory-ness": 'super',
@@ -33,7 +33,7 @@ describe('savorynessProperty', function() {
     expect(yourCode.savorynessProperty(obj)).toEqual('super');
   });
 
-  xit('returns undefined when there is no `savory-ness` key', function() {
+  it('returns undefined when there is no `savory-ness` key', function() {
     expect(yourCode.savorynessProperty({})).toEqual(undefined);
   });
 });
