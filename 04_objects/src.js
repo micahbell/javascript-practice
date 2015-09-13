@@ -23,6 +23,12 @@ module.exports = {
     return result;
   },
 
+  keys: function(obj) {
+    var keys = Object.keys(obj);
+    console.log(keys);
+    return keys;
+  },
+
 
 
 

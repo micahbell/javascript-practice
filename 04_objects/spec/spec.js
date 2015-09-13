@@ -39,7 +39,7 @@ describe('savorynessProperty', function() {
 });
 
 describe('keys', function() {
-  xit('returns the keys of the given object as an Array', function() {
+  it('returns the keys of the given object as an Array', function() {
     var obj = {
       the: true,
       best: [1,2,3],
