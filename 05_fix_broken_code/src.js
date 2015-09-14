@@ -6,45 +6,44 @@
 
 module.exports = {
   addition: function(a,b) {
-    a + b;
+    var total = a + b;
+    return total;
   },
 
   matches: function(first, second) {
     var result;
 
-    if (first = second) {
+    if (first === second) {
       result = true;
-    } else {
+    } else if (first !== second) {
       result = false;
     }
-
     return result;
   },
 
   fizzBuzz: function(number) {
-    var divisibleByThree = number % 3,
-        divisibleByFive = number % 5,
-        output = number;
-
-    if (divisibleByThree && divisibleByFive) {
-      output = 'FizzBuzz';
-    } else if (divisibleByThree) {
+    var divByThree = number % 3,
+        divByFive = number % 5,
+        output = '';
+    if (divByThree !== 0 && divByFive !== 0) {
+      output = number;
+    } else if (divByThree === 0) {
       output = 'Fizz';
-    } else if (divisibleByFive) {
+    } else if (divByFive === 0) {
       output = 'Buzz';
     }
-
     return output;
   },
 
   switcher: function(word) {
     var output;
-
     switch (word) {
       case 'foo':
-        output = 'bar';
+        output = 'bar'; //Statements executed when the result of expression matches word.
+        break;
       case 'nope':
         output = 'yup';
+        break;
       default:
         output = 'never output anything. ever!'
     };
