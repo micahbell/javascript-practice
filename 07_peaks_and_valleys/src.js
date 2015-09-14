@@ -9,7 +9,58 @@
 */
 
 module.exports = {
+  
   peak: function() {
-    // your code here
-  }
+    var string = '/\\';
+    return string;
+  },
+
+  valley: function() {
+    var string = '___';
+    return string;
+  },
+
+  peaks: function(num) {
+    var string = '/\\';
+    var newString = '';
+    for (var i = 0; i < num; i++) {
+      newString += string;
+    }
+    return newString;
+  },
+
+  valleys: function(num) {
+    var string = '___';
+    var newString = '';
+    for (var i = 0; i < num; i++) {
+      newString += string;
+    }
+    return newString;
+  },
+
+  peaksAndValleys: function(peaksCount, valleysCount) {
+    var peakString = '/\\';
+    var valleyString = '___';
+    var newString = '';
+    for (var i = 0; i < peaksCount; i++) {
+      newString += peakString;
+    }
+    for (var i = 0; i < valleysCount; i++) {
+      newString += valleyString;
+    }
+    console.log(newString);
+    return newString;
+  },
+
 }
+
+
+
+
+
+
+
+
+
+
+//
