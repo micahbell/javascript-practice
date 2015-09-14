@@ -9,7 +9,7 @@ module.exports = {
 
   sweetnessProperty: function(obj) {
     var result = obj.sweetness;
-    if(!obj.sweetness) {
+    if(!'sweetness' in obj) {
       return undefined;
     }
     return result;
@@ -24,10 +24,39 @@ module.exports = {
   },
 
   keys: function(obj) {
-    var keys = Object.keys(obj);
-    console.log(keys);
-    return keys;
+    if(obj.length === 0) {
+      return [];
+    } else {
+      var keys = Object.keys(obj);
+      return keys;
+    }
   },
+
+  sortedKeys: function(obj) {
+    if(obj.length === 0) {
+      return [];
+    } else {
+      var keys = Object.keys(obj);
+      // console.log(keys);
+      keys.sort();
+      // console.log(keys);
+      return keys
+    }
+  },
+
+  reverseSortedKeys: function(obj) {
+    if(obj.length === 0) {
+      return [];
+    } else {
+      var keys = Object.keys(obj);
+      // console.log(keys);
+      keys.sort().reverse();
+      // console.log(keys);
+      return keys
+    }
+  }
+
+
 
 
 
