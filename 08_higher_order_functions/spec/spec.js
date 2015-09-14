@@ -1,6 +1,6 @@
 var yourCode = require('../src');
 
-describe('simpeCall', function() {
+describe('simpleCall', function() {
 
   it('calls the function passed to it and returns the result', function() {
     var rand = (new Date()).getMilliseconds();
@@ -16,7 +16,7 @@ describe('simpeCall', function() {
 
 describe('each', function() {
 
-  xit('calls the function passed to it once for every item in the array', function() {
+  it('calls the function passed to it once for every item in the array', function() {
     var items = ['a', 'k', 'z'];
     var rand = (new Date()).getMilliseconds();
     var result = [rand];
@@ -24,7 +24,7 @@ describe('each', function() {
     yourCode.each(items, function(letter){
       result.push(letter.toUpperCase());
     });
-
+    // console.log(result);
     expect(result).toEqual([rand, 'A', 'K', 'Z']);
   });
 
@@ -32,7 +32,7 @@ describe('each', function() {
 
 describe('map', function() {
 
-  xit('calls the function passed to it once for every item in the array and returns an array with the results', function() {
+  it('calls the function passed to it once for every item in the array and returns an array with the results', function() {
     var rand = (new Date()).getMilliseconds();
     var items = [rand, 1,2,3];
 

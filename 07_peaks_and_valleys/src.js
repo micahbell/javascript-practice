@@ -9,10 +9,10 @@
 */
 
 module.exports = {
-  
+
   peak: function() {
     var string = '/\\';
-    return string;
+    return tring;
   },
 
   valley: function() {
